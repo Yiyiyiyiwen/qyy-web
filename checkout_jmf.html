@@ -1,0 +1,652 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="meta description">
+    <title>Selena - Organic eCommerce Bootstrap 4 Template</title>
+
+    <!--=== Favicon ===-->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+
+    <!--=== All Plugins CSS ===-->
+    <link href="assets/css/plugins.css" rel="stylesheet">
+    <link href="assets/css/themify-icons-demo.css" rel="stylesheet">
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+    <!--=== All Vendor CSS ===-->
+    <link href="assets/css/vendor.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/paper-bootstrap-wizard.css" rel="stylesheet">
+    <link href="assets/css/demo.css" rel="stylesheet">
+    <!--=== Main Style CSS ===-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+
+
+    <link href="assets/css/export.css" rel="stylesheet">
+    <link href="assets/css/SidebarNav.min.css" rel="stylesheet">
+
+    <style>
+        #chartdiv {
+            width: 100%;
+            height: 375px;
+        }
+
+        #chartdiv1 {
+            width: 100%;
+            height: 295px;
+        }
+
+        .jqcandlestick-container {
+            width: 100%;
+            height: 300px;
+        }
+    </style>
+    <!-- Modernizer JS -->
+    <script src="assets/js/modernizr-2.8.3.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+    <script src="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/echarts.min.js"></script>  
+    <script src="assets/js/echarts-gl.min.js"></script>
+    <script src="assets/js/world.js"></script>
+    <script src="assets/js/model.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Start Header Area -->
+    <header class="header-area">
+        <!-- header top start -->
+        <div class="header-top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="assets/img/logo/logo.jpg" alt="Brand Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="header-settings-area">
+                            <div class="header-top-left">
+                                <nav>
+                                    <ul class="d-flex justify-content-center">
+                                        <li>
+                                            <div class="dropdown header-top-dropdown">
+                                                <a class="dropdown-toggle" id="myaccount" data-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                    我的账户
+                                                    <i class="fa fa-angle-down"></i>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="myaccount">
+                                                    <a class="dropdown-item" href="my-account.html">我的账户</a>
+                                                    <a class="dropdown-item" href="login-register.html"> 登录</a>
+                                                    <a class="dropdown-item" href="login-register.html">注册</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="header-top-right">
+                                <div class="header-search-box">
+                                    <form>
+                                        <input type="text" placeholder="搜索">
+                                        <button><i class="ion-ios-search-strong"></i></button>
+                                    </form>
+                                </div>
+                                <div class="mini-cart-wrap">
+                                    <button><i class="ion-bag"></i>
+                                        <span class="notification">2</span>
+                                    </button>
+                                    <ul class="cart-list">
+                                        <li>
+                                            <div class="cart-img">
+                                                <a href="product-details.html"><img src="assets/img/cart/cart-1.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                            <div class="cart-info">
+                                                <h4><a href="product-details.html">simple product</a></h4>
+                                                <span class="cart-qty">Qty: 1</span>
+                                                <span>$60.00</span>
+                                            </div>
+                                            <div class="del-icon">
+                                                <i class="fa fa-times"></i>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="cart-img">
+                                                <a href="product-details.html"><img src="assets/img/cart/cart-2.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                            <div class="cart-info">
+                                                <h4><a href="product-details.html">virtual product</a></h4>
+                                                <span class="cart-qty">Qty: 2</span>
+                                                <span>$100.00</span>
+                                            </div>
+                                            <div class="del-icon">
+                                                <i class="fa fa-times"></i>
+                                            </div>
+                                        </li>
+                                        <li class="mini-cart-price">
+                                            <span class="subtotal">subtotal : </span>
+                                            <span class="subtotal-price ml-auto">$110.00</span>
+                                        </li>
+                                        <li class="checkout-btn">
+                                            <a href="#">View Cart</a>
+                                        </li>
+                                        <li class="checkout-btn">
+                                            <a href="#">checkout</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header top end -->
+
+        <!-- main menu start -->
+        <div class="main-menu-area sticky">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="main-menu">
+                            <div class="sticky-logo">
+                                <a href="index.html">
+                                    <img src="assets/img/logo/logo.jpg" alt="brand logo">
+                                </a>
+                            </div>
+                            <!-- main menu navbar start -->
+                            <nav id="mobile-menu">
+                                <ul>
+                                    <li><a href="index.html">主页 </a>
+                                    </li>
+                                    <!-- <li><a href="#">pages <i class="fa fa-angle-down"></i></a>
+                                    <ul class="megamenu dropdown">
+                                        <li class="mega-title"><a href="#">column 01</a>
+                                            <ul>
+                                                <li><a href="shop.html">shop grid left
+                                                    sidebar</a></li>
+                                                <li><a href="shop-grid-right-sidebar.html">shop grid right
+                                                    sidebar</a></li>
+                                                <li><a href="shop-list-left-sidebar.html">shop list left sidebar</a>
+                                                </li>
+                                                <li><a href="shop-list-right-sidebar.html">shop list right sidebar</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="mega-title"><a href="#">column 02</a>
+                                            <ul>
+                                                <li><a href="product-details.html">product details</a></li>
+                                                <li><a href="product-details-affiliate.html">product
+                                                    details
+                                                    affiliate</a></li>
+                                                <li><a href="product-details-variable.html">product details
+                                                    variable</a></li>
+                                                <li><a href="product-details-group.html">product details
+                                                    group</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mega-title"><a href="#">column 03</a>
+                                            <ul>
+                                                <li><a href="cart.html">cart</a></li>
+                                                <li><a href="checkout.html">checkout</a></li>
+                                                <li><a href="compare.html">compare</a></li>
+                                                <li><a href="wishlist.html">wishlist</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mega-title"><a href="#">column 04</a>
+                                            <ul>
+                                                <li><a href="my-account.html">my-account</a></li>
+                                                <li><a href="login-register.html">login-register</a></li>
+                                                <li><a href="about-us.html">about us</a></li>
+                                                <li><a href="contact-us.html">contact us</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li> -->
+                                    <li><a href="shop.html">商城 </a>
+                                    </li>
+                                    <li><a href="cart.html">购物车 </a>
+                                    </li>
+                                    <li class="active"><a href="checkout.html">订单详情</a>
+                                    </li>
+                                    <li><a href="compare.html">商品比较</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <!-- main menu navbar end -->
+                        </div>
+                    </div>
+                    <div class="col-12 d-block d-lg-none">
+                        <div class="mobile-menu"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main menu end -->
+
+    </header>
+    <!-- end Header Area -->
+    <div class="wizard-container">
+        <div class="card wizard-card" data-color="green" id="wizard">
+            <form action="" method="">
+                <!--        You can switch " data-color="green" "  with one of the next bright colors: "blue", "azure", "orange", "red"       -->
+
+                <div class="wizard-header">
+                    <h3 class="wizard-title">订单管理</h3>
+                    <p class="category">填写订单信息</p>
+                </div>
+                <div class="wizard-navigation">
+                    <div class="progress-with-circle">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="1"
+                            aria-valuemax="4" style="width: 15%;"></div>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#location" data-toggle="tab">
+                                <div class="icon-circle">
+                                    <i class="ti-map"></i>
+                                </div>
+                                填写订单信息
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#description" data-toggle="tab">
+                                <div class="icon-circle">
+                                    <i class="ti-comments"></i>
+                                </div>
+                                订单详情
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane" id="location">
+                        
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h5 class="info-text"> 现在开始填写吧！</h5>
+                            </div>
+                            <div class="col-sm-12 col-sm-offset-1 col-md-5">
+                                <div class="form-group">
+                                    <label>公司名称</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1" value="东软睿道"
+                                        readonly="readonly">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-sm-offset-1 col-md-5">
+                                <div class="form-group">
+                                    <label>公司编号</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                        value="ASD302592841001" readonly="readonly">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-sm-offset-1 col-md-5">
+                                <div class="form-group">
+                                    <label>商品名称</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                        placeholder="请输入商品名称">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-sm-offset-1 col-md-5">
+                                <div class="form-group">
+                                    <label>商品种类</label><br>
+                                    <select name="country" id="country_2">
+                                        <option value="Bangladesh">美妆</option>
+                                        <option value="India">水果</option>
+                                        <option value="Pakistan">电子产品</option>
+                                        <option value="England">肉类</option>
+                                        <option value="London">饰品</option>
+                                        <option value="London">男士着装</option>
+                                        <option value="Chaina">灯光与照明</option>
+                                        <option value="Chaina">美容与健康</option>
+                                        <option value="Chaina">体育与娱乐</option>
+                                        <option value="Chaina">家具与园艺</option>
+
+
+
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12 col-sm-offset-1 col-md-5">
+                                <div class="form-group">
+                                    <label>收货地址</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                        placeholder="请输入客户收货地址">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-sm-offset-1 col-md-5">
+                                <div class="form-group">
+                                    <label>联系方式</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                        placeholder="请输入客户联系方式">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-sm-offset-1 col-md-5">
+                                <div class="form-group">
+                                    <label>购买数量</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-sm-offset-1 col-md-5">
+                                <div class="form-group">
+                                    <label>商品金额</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="人民币￥">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-sm-offset-1 col-md-5">
+                                <div class="form-group">
+                                    <label>截止日期</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                        placeholder="例：2018-11-15">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-sm-offset-1 col-md-10">
+                                <div class="form-group">
+                                    <label>物品详情</label>
+                                    <input type="file">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-sm-offset-1 col-md-10">
+                                <div class="form-group">
+                                    <label>运输方式</label><br>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> 统一费率
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox2" value="option2"> 免费送货 Shipping
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row" id="basic">
+                            
+
+                        </div>
+                      
+                    </div>
+                    <div class="tab-pane" id="type">
+                            <h5 class="info-text">您的商品订单审核已经通过 </h5>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12">
+                                    <!-- <div class="col-sm-4 col-sm-offset-2">
+                                    <div class="choice" data-toggle="wizard-checkbox">
+                                        <input type="checkbox" name="jobb" value="Design">
+                                        <div class="card card-checkboxes card-hover-effect">
+                                            <i class="ti-home"></i>
+                                            <p>Home</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="choice" data-toggle="wizard-checkbox">
+                                        <input type="checkbox" name="jobb" value="Design">
+                                        <div class="card card-checkboxes card-hover-effect">
+                                            <i class="ti-package"></i>
+                                            <p>Apartment</p>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                    <div class="main-content">
+                                        <div id="page-wrapper">
+                                            <div class="charts">
+                                                <div class="col-md-12 charts-grids widget states-mdl">
+                                                    <div class="card-header">
+                                                        <h3>根据您的商品信息我们为您提供以下数据分析</h3>
+                                                    </div>
+                                                    <div id="chartdiv1"></div>
+                                                </div>
+
+                                                <div class="clearfix"> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="read">
+                                    <input type="checkbox">
+                                    我已阅读并同意平台的交易条款
+                                </div>
+                                
+                            </div>
+                            <div class="EC"></div>
+                        </div>
+                        <div class="tab-pane" id="facilities">
+                            <h5 class="info-text">订单确认 </h5>
+                            <!-- <div class="row">
+                            <div class="col-sm-12 col-sm-offset-1">
+                                <div class="form-group">
+                                    <label>Your place is good for</label><br>
+                                    <select class="form-control">
+                                        <option disabled="" selected="">- type -</option>
+                                        <option>Business</option>
+                                        <option>Vacation </option>
+                                        <option>Work</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-sm-offset-1">
+                                <div class="form-group">
+                                    <label>Is air conditioning included ?</label><br>
+                                    <select class="form-control">
+                                        <option disabled="" selected="">- response -</option>
+                                        <option>Yes</option>
+                                        <option>No </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-sm-offset-1">
+                                <div class="form-group">
+                                    <label>Does your place have wi-fi?</label><br>
+                                    <select class="form-control">
+                                        <option disabled="" selected="">- response -</option>
+                                        <option>Yes</option>
+                                        <option>No </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-sm-offset-1">
+                                <div class="form-group">
+                                    <label>Is breakfast included?</label><br>
+                                    <select class="form-control">
+                                        <option disabled="" selected="">- response -</option>
+                                        <option>Yes</option>
+                                        <option>No </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div> -->
+
+
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>母订单编号</th>
+                                        <th>厂商商名</th>
+                                        <th>仓库所在地</th>
+                                        <th>信用等级</th>
+                                        <th>购买数量</th>
+                                        <th>物流方式</th>
+                                        <th>价格</th>
+                                        <th>是否包邮</th>
+                                        <th>查看详情</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="cart.html">100000001</a></td>
+                                        <td>东软睿道 </td>
+                                        <td>中国</td>
+                                        <td>A+</td>
+                                        <td>1</td>
+                                        <td>顺丰速运</td>
+                                        <td>￥230</td>
+                                        <td><input type="checkbox">
+                                        </td>
+                                        <td><a href="">查看详情</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="cart.html">100000002</a></td>
+                                        <td>东软睿道 </td>
+                                        <td>中国</td>
+                                        <td>A+</td>
+                                        <td>1</td>
+                                        <td>顺丰速运</td>
+                                        <td>￥230</td>
+                                        <td><input type="checkbox">
+                                        </td>
+                                        <td><a href="">查看详情</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+
+
+                        </div>
+                        <div class="tab-pane" id="description">
+                            <div class="row" style="margin-top:30px">
+                                <div class="myaccount-content" style="width:100%">
+                                    <h3>已完成的订单</h3>
+                                    <div class="myaccount-tab-menu nav menu2" role="tablist">
+                                        <a href="#all" class="active" data-toggle="tab">
+                                            所有订单</a>
+                                        <a href="#pay" data-toggle="tab">
+                                            待付款</a>
+                                        <a href="#send" data-toggle="tab">
+                                            待发货</a>
+                                        <a href="#receive" data-toggle="tab">
+                                            待收货</a>
+                                        <a href="#comment" data-toggle="tab">
+                                            待评价</a>
+                                    </div>
+                                    <div class="myaccount-table table-responsive text-center" id="all">
+                                        <div class="commodity-item">
+                                            <div class="commodity-time">
+                                                <div class="commodity-date" style="font-weight:bold;">
+                                                    2019-02-09
+                                                </div>
+                                                <div class="commodity-number">
+                                                    订单号: 100000001
+                                                </div>
+                                            </div>
+                                            <div class="commodity">
+                                                <div class="commodity-image">
+                                                    <img src="assets/img/product/雅诗兰黛.jpg">
+                                                </div>
+                                                <div class="commodity-detail">
+                                                    <div class="commodity-name">
+                                                        雅诗兰黛 PC DESIRE ROUGE
+                                                    雅诗兰黛绝色魅惑唇膏
+                                                    </div>
+                                                    <div class="commodity-type">
+                                                        颜色：奢缎305 红梨色
+                                                    </div>
+                                                </div>
+                                                <div class="commodity-price">
+                                                    <div style="font-weight:bold">￥245</div>
+                                                    <div class="fee">
+                                                        (含运费：￥15.00)
+                                                    </div>
+                                                </div>
+                                                <div class="commodity-num">
+                                                    1
+                                                </div>
+                                                <div class="commodity-button">
+                                                    <a href="blog-details.html" class="btn btn__bg btn__sqr">查看物流</a>
+                                                </div>
+                                                <div class="commodity-status">
+                                                    交易成功
+                                                    <div class="order-detail">
+                                                        <a>订单详情</a>
+                                                    </div>
+                                                </div>
+
+
+
+                                                <div class="commodity-comment">
+                                                    <a href="#" class="btn btn__sqr">评价</a>
+                                                </div>
+                                                <div class="commodity-comment">
+                                                    <button class="btn btn__sqr" data-toggle="modal"
+                                                        data-target="#">处理纠纷</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="wizard-footer">
+                        <div class="pull-right">
+                            <input type='button' class='btn btn-next btn-fill btn-success btn-wd' name='next'
+                                value='订单确认' />
+                            <input type='button' class='btn btn-finish btn-fill btn-success btn-wd' name='finish'
+                                value='完成' />
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+            </form>
+        </div>
+    </div> <!-- wizard container -->
+
+
+    <!-- Scroll to top start -->
+    <div class="scroll-top not-visible">
+        <i class="fa fa-angle-up"></i>
+    </div>
+    <!-- Scroll to Top End -->
+
+    <!--=======================Javascript============================-->
+    <!--=== All Vendor Js ===-->
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/vendor.js"></script>
+    <!--=== All Plugins Js ===-->
+    <script src="assets/js/plugins.js"></script>
+    <!--=== Active Js ===-->
+    <script src="assets/js/active.js"></script>
+
+    <script src="assets/js/jquery.bootstrap.wizard.js"></script>
+    <script src="assets/js/paper-bootstrap-wizard.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/amcharts.js"></script>
+    <script src="assets/js/export.min.js"></script>
+    <script src="assets/js/modernizr.custom.js"></script>
+    <script src="assets/js/serial.js"></script>
+    <script src="assets/js/index2.js"></script>
+    
+    
+    
+
+    <script>
+        $(function () {
+            $("#datepicker").datepicker({
+                showOtherMonths: true,
+                selectOtherMonths: true
+            });
+        });
+    </script>
+</body>
+
+</html>
